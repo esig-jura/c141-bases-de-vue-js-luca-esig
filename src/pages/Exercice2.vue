@@ -9,13 +9,13 @@
       <!-- Formulaire pour modifier les données -->
       <v-form class="my-6">
         <!-- Ajoutez ici une liaison dynamique avec la variable title -->
-        <v-text-field v-model="title" <!--grace a vmodel c est réactif-->
+        <v-text-field v-model="title"
 
           label="Modifier le titre"
           placeholder="Entrez un nouveau titre"
           outlined
           class="mb-4"
-        />
+        /><!-- grace a vmodel c est réactif-->
         <!-- Ajoutez ici une liaison dynamique avec la variable description -->
         <v-textarea v-model="description"
 
