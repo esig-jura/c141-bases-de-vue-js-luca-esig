@@ -27,11 +27,11 @@
       <!-- Carte dynamique -->
       <v-card class="mx-auto my-6 pa-2" max-width="400">
         <!-- Titre dynamique -->
-        <v-card-title>*** TITRE ***</v-card-title>
+        <v-card-title>{{title}}</v-card-title>
 
         <!-- Description dynamique -->
         <v-card-subtitle>
-          *** DESCRIPTION ***
+          {{description }}
         </v-card-subtitle>
       </v-card>
     </div>
