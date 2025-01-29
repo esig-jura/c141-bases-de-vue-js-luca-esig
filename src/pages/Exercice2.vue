@@ -31,7 +31,7 @@
 
         <!-- Description dynamique -->
         <v-card-subtitle>
-          {{description }}
+          {{description  }}
         </v-card-subtitle>
       </v-card>
     </div>
