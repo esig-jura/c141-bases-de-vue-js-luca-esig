@@ -9,14 +9,16 @@
       <!-- Formulaire pour modifier les données -->
       <v-form class="my-6">
         <!-- Ajoutez ici une liaison dynamique avec la variable title -->
-        <v-text-field
+        <v-text-field v-model="title" <!--grace a vmodel c est réactif-->
+
           label="Modifier le titre"
           placeholder="Entrez un nouveau titre"
           outlined
           class="mb-4"
         />
         <!-- Ajoutez ici une liaison dynamique avec la variable description -->
-        <v-textarea
+        <v-textarea v-model="description"
+
           label="Modifier la description"
           placeholder="Entrez une nouvelle description"
           outlined
@@ -31,7 +33,7 @@
 
         <!-- Description dynamique -->
         <v-card-subtitle>
-          {{description  }}
+          {{description }}
         </v-card-subtitle>
       </v-card>
     </div>
@@ -39,11 +41,13 @@
 </template>
 
 <script setup>
+
 // Importation du composant contenant la donnée de l'exercice
 import Exercice2Donnee from "@/components/donnees/Exercice2Donnee.vue";
+import {ref} from "vue";
 
-// Données préparées pour l'exercice
-const title = "Bienvenue à l'exercice 2"
-const description = "Cet exercice teste la gestion des événements et l'interaction avec les formulaires."
+// Définition des données réactives
+const title = ref("Bienvenue à l'exercice 2");// grace a ref c est réactif
+const description = ref("Cet exercice teste la gestion des événements et l'interaction avec les formulaires.");
 </script>
 
